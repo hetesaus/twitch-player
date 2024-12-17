@@ -11,6 +11,9 @@ const channelName = getQueryParam("channel");
 
 // Update channel name if provided
 if (channelName) {
-	const twitchPlayer = document.getElementById("player");
-	twitchPlayer.src = `https://player.twitch.tv/?channel=${channelName}&parent=${domain}`;
+	const player = document.getElementById("player");
+	const chat = document.getElementById("chat");
+	
+	player.src = `https://player.twitch.tv/?channel=${channelName}&parent=${domain}`;
+	chat.src = `https://www.twitch.tv/embed/{channelName}/chat`;
 }
