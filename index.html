@@ -8,21 +8,19 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <div>	
-		<iframe
-			id="player"
-			height="480"
-			width="854"
-			allowfullscreen>
-		</iframe>
-		
-		<iframe
+	<div id="container">
+        <div class="player-container">	
+			<iframe
+				id="player"
+				allowfullscreen>
+			</iframe>
+		</div>
+
+		<iframe 
 			id="chat"
-			height="480"
-			width="854">
+			class="chat-container">>
 		</iframe>
 	</div>
-	
     <script src="script.js"></script>
 </body>
 </html>
