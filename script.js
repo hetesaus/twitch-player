@@ -15,5 +15,5 @@ if (channelName) {
 	const chat = document.getElementById("chat");
 	
 	player.src = `https://player.twitch.tv/?channel=${channelName}&parent=${domain}`;
-	chat.src = `https://www.twitch.tv/embed/${channelName}/chat`;
+	chat.src = `https://www.twitch.tv/embed/${channelName}/chat?parent=${domain}`;
 }
