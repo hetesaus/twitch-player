@@ -1,12 +1,15 @@
 const domain = "hetesaus.github.io";
 
-function getChannelNameFromPath() {
-	const path = window.location.pathname.split('/');
-	return path[path.length - 1];
+// Function to get query parameters from the URL
+function getQueryParam(param) {
+	const urlParams = new URLSearchParams(window.location.search);
+	return urlParams.get(param);
 }
 
-const channelName = getChannelNameFromPath();
+// Get the channel name from the query parameter
+const channelName = getQueryParam("channel");
 
+// Update channel name if provided
 if (channelName) {
 	const player = document.getElementById("player");
 	const chat = document.getElementById("chat");
